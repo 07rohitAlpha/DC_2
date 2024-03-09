@@ -1,0 +1,16 @@
+<!--  <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Test"  verbose="1" parallel="methods" thread-count="3">
+
+  <listeners> 
+      <listener class-name="com.DC.utilities.listeners.ExtentReportListener"/>
+  </listeners>
+  
+  <test name= "Delhi_Crime Test">
+  <classes>
+    <class name= "com.DC.testCase.TC_Login_001"/>  
+   <class name = "com.DC.testCase.ArrestDeatils"/>
+  </classes>
+  </test>
+</suite>  -->

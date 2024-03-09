@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="DC">
+
+	<listeners>
+		<listener class-name="com.DC.utilities.Reporting" />
+		
+	</listeners>
+
+
+	<test name="Delhi_Crime Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			  <!--   <class name="com.DC.testCase.TC_Login_001" /> 
+			  <class name = "com.DC.testCase.TC_LoginDDT_002"/> 
+			<class name = "com.DC.testCase.UserInfo"/>   --> 
+			<!--   <class name = "com.DC.testCase.Direction"/> -->
+				  <class name = "com.DC.testCase.Interrogee_Details"/> 
+		<!-- 	<class name = "com.DC.testCase.PresentAddress"/> -->
+			<!-- <class name= "com.DC.testCase.PermanentAddress"/> -->
+			<!-- <class name= "com.DC.testCase.Education"/> -->
+			<!-- <class name = "com.DC.testCase.TelephoneNumber"/> -->
+			<!-- <class name = "com.DC.testCase.Language"/> -->
+			<!-- <class name = "com.DC.testCase.Email"/> -->
+			<!-- <class name ="com.DC.testCase.MessagingApp"/> -->
+			<!-- <class name = "com.DC.testCase.PersonalDocument"/> -->
+			<!-- <class name = "com.DC.testCase.VoiceSample"/> -->
+			<!-- <class name = "com.DC.testCase.DescriptionAndHabits"/> <class name 
+				= "com.DC.testCase.FamilyDetails"/> -->
+			<!-- <class name = "com.DC.testCase.FriendsAssociatesDetails"/> -->
+			<!-- <class name = "com.DC.testCase.Advocate"/> -->
+			<!-- <class name = "com.DC.testCase.ArrestDeatils"/> -->
+			<!-- <class name = "com.DC.testCase.Network"/> <class name = "com.DC.testCase.Bank 
+				Account"/> <class name = "com.DC.testCase.UPI"/> <class name = "com.DC.testCase.Credit 
+				Card Details"/> -->
+
+
+
+		</classes>
+
+	</test>
+
+</suite>
