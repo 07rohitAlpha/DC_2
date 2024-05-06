@@ -7,13 +7,27 @@
   <test thread-count="5" name="Delhi_Crime Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.DC.testCase.Interrogee_Details">
+      <class name="com.DC.testCase.TC_Login_001">
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="IntoTest"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.DC.testCase.Interrogee_Details -->
+      </class> <!-- com.DC.testCase.TC_Login_001 -->
+      <class name="com.DC.testCase.UserInfo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="UserTest"/>
+        </methods>
+      </class> <!-- com.DC.testCase.UserInfo -->
+      <class name="com.DC.testCase.Direction">
+        <methods>
+          <include name="directionTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.DC.testCase.Direction -->
     </classes>
   </test> <!-- Delhi_Crime Test(failed) -->
 </suite> <!-- Failed suite [DC] -->

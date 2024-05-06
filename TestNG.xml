@@ -12,11 +12,11 @@
 	<test name="Delhi_Crime Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			  <!--   <class name="com.DC.testCase.TC_Login_001" /> 
-			  <class name = "com.DC.testCase.TC_LoginDDT_002"/> 
-			<class name = "com.DC.testCase.UserInfo"/>   --> 
-			<!--   <class name = "com.DC.testCase.Direction"/> -->
-				  <class name = "com.DC.testCase.Interrogee_Details"/> 
+			    <class name="com.DC.testCase.TC_Login_001" /> 
+		<!--	   <class name = "com.DC.testCase.TC_LoginDDT_002"/> -->
+			<class name = "com.DC.testCase.UserInfo"/>    
+			   <class name = "com.DC.testCase.Direction"/> 
+				 <!-- <class name = "com.DC.testCase.Interrogee_Details"/> -->
 		<!-- 	<class name = "com.DC.testCase.PresentAddress"/> -->
 			<!-- <class name= "com.DC.testCase.PermanentAddress"/> -->
 			<!-- <class name= "com.DC.testCase.Education"/> -->

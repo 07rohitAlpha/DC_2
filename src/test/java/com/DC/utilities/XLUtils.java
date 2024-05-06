@@ -11,7 +11,8 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class XLUtils {
-	
+	public static final int IMPLICIT_WAIT_TIME=20;
+	public static final int PAGE_WAIT_TIME=10;
 	public static FileInputStream fi;
 	public static FileOutputStream fo;
 	public static XSSFWorkbook wb;

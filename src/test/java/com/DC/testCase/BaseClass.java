@@ -20,6 +20,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
@@ -28,6 +30,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import com.DC.utilities.ReadConfig;
+import com.DC.utilities.XLUtils;
 
 
 public class BaseClass {
@@ -75,7 +78,15 @@ public class BaseClass {
 	@BeforeClass
 	public void setup(String br) {
 		
-		
+		String browserName = "chrome";
+		if(browserName.equals("chrome")) {
+			driver = new ChromeDriver();
+		}
+		else if(browserName.equals("firefox")) {
+			driver = new FirefoxDriver();
+		}else if(browserName.equals("edge")) {
+			driver = new EdgeDriver();
+		}
 		
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--start-maximized");
@@ -110,8 +121,9 @@ public class BaseClass {
 		co.addArguments("--remote-allow-origins=*");
 		tdriver.set(driver);
 		driver = new ChromeDriver(co);
-		driver.manage().window().maximize();
-		
+		driver.manage().window().maximize(); 
+		driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(XLUtils.IMPLICIT_WAIT_TIME));
+		driver.manage().timeouts().pageLoadTimeout(java.time.Duration.ofSeconds(XLUtils.PAGE_WAIT_TIME));
 		
 		
 
@@ -152,7 +164,7 @@ public class BaseClass {
 	}
 
 	public void initiaze_driver() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 

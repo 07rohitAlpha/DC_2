@@ -3,13 +3,14 @@ package com.DC.testCase;
 import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
 
 import com.DC.pageObjects.LoginPage;
 import com.DC.pageObjects.UserInfoPage;
 
-import junit.framework.Assert;
+
 
 public class UserInfo extends BaseClass  {
 	

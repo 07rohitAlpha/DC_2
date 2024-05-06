@@ -51,8 +51,81 @@ public class DirectionPage extends  BaseClass {
 	}
 
 	public String getTitle() {
-		// TODO Auto-generated method stub
 		return null;
+	}
+	
+	
+	@FindBy(how=How.XPATH,using="//li[normalize-space()='Gangster']")
+	@CacheLookup
+	
+	WebElement txtNatureOfCrime;
+	public void setNatureOfCrime(String natureofcrime) {
+		txtNatureOfCrime.sendKeys(natureofcrime);
+	}
+	
+	@FindBy(how=How.XPATH,using="//input[@placeholder='Enter fir number']")
+	@CacheLookup
+	WebElement txtFIRNo;
+	
+	public void setFIRNo(String firno) {
+		txtNatureOfCrime.sendKeys(firno);
+	}
+	
+	@FindBy(how=How.XPATH,using="//select[@name='fir_year']")
+	@CacheLookup
+	WebElement txtFIRYear;
+	
+	public void setFIRYear(String firyear) {
+		txtFIRYear.sendKeys(firyear);
+	}
+	
+	@FindBy(how=How.XPATH,using="//input[@placeholder='Enter FIR Date']")
+	@CacheLookup
+	WebElement txtFIRDate;
+	
+	public void setFIRDate(String firdate) {
+		txtFIRDate.sendKeys(firdate);
+	}
+	
+	@FindBy(how=How.XPATH,using="//select[@name='fir_state']")
+	@CacheLookup
+	WebElement txtFIRState;
+	
+	public void setFIRState(String firstate) {
+		txtFIRState.sendKeys(firstate);
+	}
+	
+	@FindBy(how=How.XPATH,using="//select[@name='fir_district']")
+	@CacheLookup
+	WebElement txtFIRDistrict;
+	
+	public void setFIRDistrict(String firdistrict) {
+		txtFIRDistrict.sendKeys(firdistrict);
+	}
+	
+	@FindBy(how=How.XPATH,using="//select[@name='fir_police_station']")
+	@CacheLookup
+	WebElement txtFIRPoliceStation;
+	
+	public void setFIRPoliceStation(String firpolicestation) {
+		txtFIRPoliceStation.sendKeys(firpolicestation);
+	}
+	
+	
+	@FindBy(how=How.XPATH,using="//textarea[@placeholder='Enter Context']")
+	@CacheLookup
+	WebElement txtContext;
+	
+	public void setContext(String context) {
+		txtContext.sendKeys(context);
+	}
+	
+	@FindBy(how=How.XPATH,using="//textarea[@placeholder='Enter Context']")
+	@CacheLookup
+	WebElement btnSubmit;
+	
+	public void clickSubmit() {
+		btnSubmit.click();
 	}
 
 }

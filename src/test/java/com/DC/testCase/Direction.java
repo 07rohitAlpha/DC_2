@@ -264,6 +264,30 @@ public class Direction extends BaseClass {
 			captureScreen(driver, "directionTest");
 			Assert.assertTrue(false);
 		}
+		
+		dir.setNatureOfCrime("Gangster");
+		Thread.sleep(1000);
+		
+		dir.setFIRNo("1231");
+		Thread.sleep(1000);
+		
+		dir.setFIRYear("2020");
+		Thread.sleep(1000);
+		
+		dir.setFIRDate("05-04-2024");
+		Thread.sleep(1000);
+		
+		dir.setFIRState("Delhi");
+		Thread.sleep(1000);
+		
+		dir.setFIRDistrict("CENTRAL");
+		Thread.sleep(1000);
+		
+		dir.setFIRPoliceStation("ANAND PARBAT");
+		Thread.sleep(1000);
+		
+		dir.setContext("Leftover/wanted ");
+		Thread.sleep(1000);
 
 	}
 

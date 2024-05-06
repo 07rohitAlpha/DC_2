@@ -15,8 +15,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import ru.yandex.qatools.ashot.AShot;
-import ru.yandex.qatools.ashot.Screenshot;
+//import ru.yandex.qatools.ashot.AShot;
+//import ru.yandex.qatools.ashot.Screenshot;
 
 public class LoginPage {
  
@@ -81,9 +81,9 @@ public class LoginPage {
 				
 		WebDriver driver = null;
 		Collection<WebElement> logo = null;
-		Screenshot logoImageScreenshot=new AShot().takeScreenshot(driver,logo);
+//		Screenshot logoImageScreenshot=new AShot().takeScreenshot(driver,logo);
 				
-		ImageIO.write(logoImageScreenshot.getImage(), "png", new File("D://selenium logo/logo.png"));
+//		ImageIO.write(logoImageScreenshot.getImage(), "png", new File("D://selenium logo/logo.png"));
 	
 	
 
